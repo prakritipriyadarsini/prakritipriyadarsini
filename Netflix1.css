@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial;
+    border: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------------------------header------------------------------ */
+
+
+.main {
+    /* width: 100%;  */
+    background-image: url("backgroundap.jpg"); 
+   /* background-image: url("asset\ 14.jpeg"); */
+    height: 690px;
+    width: 100%;
+    background-position: center  center; 
+    /* padding: 10px 8%; */
+    position: relative; 
+    background-repeat: no-repeat;
+    border-bottom: 8px solid rgb(63, 62, 62);
+    
+} 
+.prim-button{
+    height: 32px;
+    width: 111px;
+    background-color: red;
+    text-align: center;
+    padding-top: 9px;
+    border-radius: 4px;
+}
+.secn-button{
+    height: 32px;
+    width: 100px;
+    text-align: center;
+    padding-top: 9px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.box {
+    height: 690px;
+    width: 100%;
+    opacity: 0.60;
+    top: 0;
+    position: absolute;
+    background-color: black; 
+}
+
+nav {
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
+nav img {
+    color: red;
+    width: 114px;
+    position:  relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+.nav-pag{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    padding: 0 30px;
+}
+.bold-letter{
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    font-weight: 860;
+    padding-bottom: 20px;
+}
+
+.letter {
+    font-family: 'Montserrat', sans-serif ;    
+    font-size:21px ;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.btn-red {
+    height: 25px;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+    padding-top: 2px;
+    border: 1px solid rgb(118, 106, 106);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px ;
+    font-size: 15px;
+    color: white;
+}
+
+
+.main input {
+    height: 22px;
+    width: 300px;
+    padding: 1px 24px;
+    font-size: 20px;
+    border-top-left-radius : 4px;
+    border-bottom-left-radius: 4px;
+    background-color: rgba(23,23, 23, 0.6);
+    border: rgba(246, 238, 238, 0.5);
+    color: white;
+}
+
+/* ---------------------------------header end----------------------------- */
+
+
+.features{
+    background-color: black;
+    padding: 50px 12%;
+    font-size: 22px;
+    color: white;
+
+}
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    
+}
+.text-color {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h2  {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+/*------------------------------------------------- End features------------------------------------------------------ */
+
+.faq {
+    background-color: black;
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+.faq h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+/* --------------------accordion--------------------- */
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;  
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500px;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px ;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+} 
+
+.accordion input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+} 
+.faq .email-signup{
+     max-width: 600px;
+    margin: 20px auto 60px; 
+    
+}
+.faq small {
+    font-size: 15px;
+}
+.email-signup input {
+    height: 22px;
+    width: 300px;
+    padding: 1px 24px;
+    font-size: 20px;
+    border-top-left-radius : 4px;
+    border-bottom-left-radius: 4px;
+    background-color: rgba(23,23, 23, 0.6);
+    border: rgba(246, 238, 238, 0.5);
+    color: rgb(255, 255, 255);
+}
+.email-signup button {
+    background-color: red;
+    color: white;
+    height:30px;
+    padding: 1px 24px;
+    text-align: center;
+    border-top-right-radius : 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 20px;
+}
+.border-last {
+    border-bottom: 8px solid rgb(63, 62, 62);
+    width: 100%;
+}
+.footer{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    gap: 5px;
+    height: 180px;
+    padding: 100px 60px;
+}
+.footer a{
+    color:  rgb(165, 162, 162);
+    text-decoration: underline;
+}
+.row1{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
